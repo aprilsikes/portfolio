@@ -7,8 +7,8 @@
  * # MainCtrl
  * Controller of the portfolio2App
  */
-angular.module('portfolio2App')
-  .controller('MainCtrl', function () {
+angular.module('portfolio2App', [])
+  .controller('MainCtrl', ['$', function ($) {
 
     $(document).ready(function() {
       $('a[href*=#]').each(function() {
@@ -18,7 +18,7 @@ angular.module('portfolio2App')
           if ($target) {
             var targetOffset = $target.offset().top;
             $(this).click(function() {
-              $("#nav li a").removeClass("active");
+              $('#nav li a').removeClass('active');
               $(this).addClass('active');
               $('html, body').animate({scrollTop: targetOffset}, 1000);
               return false;
@@ -31,4 +31,4 @@ angular.module('portfolio2App')
 
 
 
-  });
+  }]);

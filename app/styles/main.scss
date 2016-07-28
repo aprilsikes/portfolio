@@ -80,7 +80,7 @@ h5 {
 }
 
 #nav li a { color: #94a4a4; opacity:1; font-size: 16px; text-decoration: none; font-family: 'Raleway'; }
-#nav li a.active { color: #94a4a4; opacity:1; border-bottom: 2px solid #94a4a4; }
+#nav li a.active { color: #94a4a4; opacity:1; }
 #nav li a:hover { color: #94a4a4; opacity:1; }
 
 #linkss {
@@ -104,7 +104,7 @@ h5 {
   margin: 0;
 }
 
-#linked, #github {
+#linked, #github, #mail {
   max-width: 30px;
   max-height: 30px;
   color: #94a4a4;

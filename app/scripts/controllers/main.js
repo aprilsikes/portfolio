@@ -8,15 +8,27 @@
  * Controller of the portfolio2App
  */
 angular.module('portfolio2App')
-  .controller('MainCtrl', function ($scope, $log) {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma',
-      'Sitepoint'
-    ];
+  .controller('MainCtrl', function () {
 
-    $scope.toggled = function(open) {
-    $log.log('Dropdown is now: ', open);
-  };
+    $(document).ready(function() {
+      $('a[href*=#]').each(function() {
+        if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname && this.hash.replace(/#/,'') ) {
+          var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+          var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+          if ($target) {
+            var targetOffset = $target.offset().top;
+            $(this).click(function() {
+              $("#nav li a").removeClass("active");
+              $(this).addClass('active');
+              $('html, body').animate({scrollTop: targetOffset}, 1000);
+              return false;
+            });
+          }
+        }
+      });
+
+    });
+
+
+
   });

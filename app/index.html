@@ -12,6 +12,8 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
     <!-- endbuild -->
   </head>
   <body ng-app="portfolio2App">
@@ -20,46 +22,131 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+    <header id="header">
+      <div class="content">
+        <div id="logo"><a href=""> April L Sikes </a></div>
+        <nav id="nav">
+         <ul>
+           <li><a href="#about" class="active" title="Next Section">About</a></li>
+           <li><a href="#projects" title="Next Section">Projects</a></li>
+           <li><a href="#resume" title="Next Section">Resume</a></li>
+           <li><a href="#contact" title="Next Section">Contact</a></li>
+         </ul>
+        </nav>
+      </div>
+    </header>
 
-            <a class="navbar-brand" href="#/">portfolio2</a>
-          </div>
+    <div id="about">
+     <div class="content">
+       <div class="quotes_container">
+         <h3 class="quotes">My Story</h3>
+         <span>I have been a stay-at-home-mom for the last 10+ years. A couple of years ago, I discovered coding through the <a id="linkss" href="https://hourofcode.com/us">Hour of Code</a>, Code.Org's initiative to get every student across the U.S. to try one hour of code. For the last few years, I have been learning JavaScript, HTML, and CSS in my spare time.</span>
+         <br>
+         <span>When I learned about the <a id="linkss" href="http://www.galvanize.com/">Galvanize</a> Web Development Program, I applied, got accepted, and made the decision to leave my husband and four boys in Lawrence, Kansas and go to Denver to learn the Full Stack.</span>
+         <br>
+         <span>I spent six months building web applications for 40-60 hours a week. Rooted in the NEAP stack (Node/Express/Angular/PostgreSQL), our curriculum at Galvanize was focused on JavaScript fundamentals.</span>
+         <br>
+         <span>I am currently looking for a role as a Junior Developer within a company that fosters growth where I can continue to learn!</span>
+       </div>
+     </div>
+    </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+    <div id="projects">
+      <div class="row content" >
+       <div class="quotes_container">
+         <h3 class="quotes">Projects</h3>
+         <a id="linksP" href="https://pool-it.firebaseapp.com/#/"><div class="col-xs-6 col-sm-3 pix">
+            <img id="poolit" src="../images/Screen Shot 2016-07-27 at 11.17.14 AM.png" alt="" />
+            <br>
+            <br>
+            <h5>Pool It!</h5>
+            <p>
+              A carpooling app connecting schools and parents! Still in beta mode.
+            </p>
+            <br>
+            <p>
+              <em>JavaScript, AngularJS, Express, NodeJS, PostgreSQL, Bootstrap</em>
+            </p>
+         </div></a>
+         <a id="linksP" href="https://rilsi-soccer-packs.firebaseapp.com/"><div class="col-xs-6 col-sm-3 pix">
+           <img id="fifa" src="../images/Screen Shot 2016-07-27 at 11.17.44 AM.png" alt="" />
+           <br>
+           <br>
+           <h5>FIFA Soccer Packs</h5>
+           <p>
+              Pack opening simulator! Open soccer packs with your friends for fun! A back-end Express API consumed by a front-end Angular app.
+           </p>
+           <br>
+           <p>
+             <em>JavaScript, AngularJS, Express, NodeJS, PostgreSQL, Bootstrap</em>
+           </p>
+         </div></a>
+         <a id="linksP" href="https://rilsi-mean-tea.firebaseapp.com/#/"><div class="col-xs-6 col-sm-3 pix">
+           <img id="meantea" src="../images/Screen Shot 2016-07-27 at 11.18.08 AM.png" alt="" />
+           <br>
+           <br>
+           <h5>MEAN Tea</h5>
+           <p>
+              A tea shopping cart! Select quantity, search by category, add items to cart, remove items.
+           </p>
+           <br>
+           <p>
+             <em>JavaScript, AngularJS</em>
+           </p>
+         </div></a>
+         <a id="linksP" href="https://rilsi-reddit.firebaseapp.com/"><div class="col-xs-6 col-sm-3 pix">
+            <img id="reddit" src="../images/Screen Shot 2016-07-27 at 12.58.30 PM.png" alt="" />
+            <br>
+            <br>
+            <h5>Reddit Clone</h5>
+            <p>
+              Using AngularJS to recreate the features of Reddit! Submit posts with images, add comments, upvote/downvote, search.
+            </p>
+            <br>
+            <p>
+              <em>JavaScript, AngularJS</em>
+            </p>
+         </div></a>
+       </div>
       </div>
     </div>
 
+    <div id="resume">
+     <div class="content">
+       <div class="resume_container">
+         <h3 class="quotes">Resume</h3>
+         <object data="../graphics/resume.pdf" type="application/pdf" class="resume">
+          <p>It appears you don't have a PDF plugin for this browser. You can <a href="../graphics/resume.pdf">click here to download the PDF file.</a><p>
+         </object>
+       </div>
+     </div>
+    </div>
+
+    <div id="contact">
+     <div class="content">
+       <div class="quotes_container">
+         <h3 class="quotes">Contact Me</h3>
+         <a id="linksL" href="https://www.linkedin.com/in/aprilsikes"><img id="linked" src="../images/linkedin-logo-1 copy.png" alt="" /> /in/aprilsikes</a>
+         <a id="linksL" href="https://github.com/aprilsikes"><img id="github" src="../images/github-logo copy.png" alt="" />github.com​/aprilsikes</a>
+         <a id="linksL" href="mailto:aprilsikes@gmail.com"><img id="github" src="../images/Message-Mail-128 copy.png" alt="" />aprilsikes@gmail.com</a>
+       </div>
+     </div>
+    </div>
+
     <div class="container">
-    <div ng-view=""></div>
+      <div ng-view=""></div>
     </div>
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <div id="copyright">copyright aprilsikes2016</div>
       </div>
     </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <script>
+    <!-- <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
@@ -67,7 +154,7 @@
 
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
-    </script>
+    </script> -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

@@ -23,6 +23,7 @@ module.exports = function (grunt) {
 
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
+    buildcontrol: 'grunt-build-control',
     ngtemplates: 'grunt-angular-templates',
     cdnify: 'grunt-google-cdn'
   });

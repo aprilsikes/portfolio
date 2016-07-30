@@ -21,6 +21,12 @@ module.exports = function (grunt) {
     bar: 'custom/bar.js'          // for custom tasks.
   });
 
+  require('jit-grunt')(grunt, {
+    useminPrepare: 'grunt-usemin',
+    ngtemplates: 'grunt-angular-templates',
+    cdnify: 'grunt-google-cdn'
+  });
+
   // Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
@@ -453,32 +459,32 @@ module.exports = function (grunt) {
     },
 
     buildcontrol: {
-    options: {
-      dir: 'dist',
-      commit: true,
-      push: true,
-      message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-    },
-    pages: {
       options: {
-        remote: 'git@github.com:aprilsikes/portfolio.git',
-        branch: 'gh-pages'
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:aprilsikes/portfolio.git',
+          branch: 'gh-pages'
+        }
+      },
+      heroku: {
+        options: {
+          remote: 'git@heroku.com:example-heroku-webapp-1988.git',
+          branch: 'master',
+          tag: pkg.version
+        }
+      },
+      local: {
+        options: {
+          remote: '../',
+          branch: 'build'
+        }
       }
     },
-    heroku: {
-      options: {
-        remote: 'git@heroku.com:example-heroku-webapp-1988.git',
-        branch: 'master',
-        tag: pkg.version
-      }
-    },
-    local: {
-      options: {
-        remote: '../',
-        branch: 'build'
-      }
-    }
-  },
 
     // Test settings
     karma: {

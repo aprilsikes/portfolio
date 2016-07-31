@@ -58,7 +58,9 @@ h5 {
   width: 100%;
   height: 80px;
   position: fixed;
-  margin-top: 30px;
+  margin-top: 0px;
+  background-color: rgba(5, 5, 5, 0.8);
+  z-index: 100;
 }
 
 #nav { width: 410px; float: right; margin-top: 20px; }
@@ -94,12 +96,18 @@ h5 {
 
 #linksL {
   color: #94a4a4;
-  font-size: 15px;
+  font-size: 17px;
   text-decoration: none;
+  justify-content: center;
+  margin-right: 10px;
 }
 
 #linkR {
   color: #fff;
+}
+
+.links {
+  justify-content: center;
 }
 
 #poolit, #fifa, #meantea, #reddit {
@@ -108,10 +116,26 @@ h5 {
   margin: 0;
 }
 
-#linked, #github, #mail {
-  max-width: 30px;
-  max-height: 30px;
+#mail {
+  max-width: 32px;
+  max-height: 32px;
   color: #94a4a4;
+  justify-content: center;
+}
+
+#github {
+  max-width: 23px;
+  max-height: 23px;
+  color: #94a4a4;
+  justify-content: center;
+}
+
+#linked {
+  max-width: 23px;
+  max-height: 23px;
+  color: #94a4a4;
+  padding-bottom: 5px;
+  justify-content: center;
 }
 
 .pix {

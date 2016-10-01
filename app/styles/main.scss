@@ -63,7 +63,7 @@ h5 {
   z-index: 100;
 }
 
-#nav { width: 410px; float: right; margin-top: 20px; }
+#nav { max-width: 410px; width: 100%; float: right; margin-top: 20px; }
 
 #logo a { color: #94a4a4; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; margin-left: 50px; color: #94a4a4; font-family:"Raleway"; }
 
@@ -151,23 +151,12 @@ h5 {
   margin: 25px auto;
 }
 
-.quotes_container { width: 900px; margin: 0 auto; }
-.resume_container { width: 900px; height: 90%; margin: 0 auto; }
-
-// #christmas_tree { background: url('../images/yeoman.png')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
-//
-// #divider { background: url('../images/yeoman.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
-//
-// #ribbon { background: url('../images/yeoman.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }
-//
-// #snowflakes1 { background: url('../images/yeoman.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -54px; left: -102px; }
-//
-// #snowflakes2 { background: url('../images/yeoman.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -33px; right: -100px; }
+.quotes_container { width: 100%; max-width: 900px; margin: 0 auto; }
+.resume_container { width: 100%; max-width: 900px; height: 90%; margin: 0 auto; }
 
 #about, #resume{ width: 100%; }
 
 #about{
-  // background:url('../images/yeoman.png') 50% 0 no-repeat fixed;
   background: url('../images/13606918_10154440087870337_7262751828488941842_n.jpg') 50% 0 no-repeat fixed;
   color: #fff;
   height: 600px;

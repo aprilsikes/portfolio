@@ -147,7 +147,7 @@ h5 {
   font-family: 'Raleway', serif;
   font-weight: normal;
   font-size: 30px;
-  text-align: left;
+  text-align: center;
   margin: 25px auto;
 }
 
@@ -170,7 +170,7 @@ h5 {
   color: #94a4a4;
   height: 500px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: auto;
   // padding: 200px 0;
 }
 
@@ -193,6 +193,7 @@ h5 {
   color: #94a4a4;
   height: 100px;
   padding: 200px 0;
+  text-align: center;
 }
 
 // .footer {
@@ -201,6 +202,8 @@ h5 {
 
 #copyright { color: #94a4a4; font-family:"Raleway"; font-size: 14px; margin-top: 50px; text-align: center; }
 #copyright a { text-decoration: none; color: #94a4a4; }
+
+
 
 
 

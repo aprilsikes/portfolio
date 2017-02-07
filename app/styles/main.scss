@@ -27,6 +27,7 @@ header nav {
 }
 
 header h1 {
+  font-weight: 200;
   float: left;
   color: #94a4a4;
   margin: 20px;
@@ -96,6 +97,10 @@ h5 {
   text-decoration: underline;
 }
 
+.about__link:visited {
+  color: #fff;
+}
+
 .about__link:hover {
   color: #fff;
 }
@@ -135,6 +140,11 @@ h5 {
   margin-top: 20px;
 }
 
+.project__link:visited {
+  color: #94a4a4;
+  text-decoration: none;
+}
+
 .project__link:hover {
   color: #94a4a4;
   text-decoration: none;
@@ -162,6 +172,11 @@ h5 {
 }
 
 .resume__link {
+  color: #fff;
+}
+
+.resume__link:visited {
+  text-decoration: none;
   color: #fff;
 }
 

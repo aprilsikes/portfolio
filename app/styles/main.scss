@@ -298,6 +298,16 @@ h5 {
     font-weight: bolder;
   }
 
+  .about__link:visited {
+    color: #555F61;
+    font-weight: bolder;
+  }
+
+  .about__link:hover {
+    color: #555F61;
+    font-weight: bolder;
+  }
+
   .about_container {
     max-width: 600px;
     text-align: center;
@@ -319,12 +329,24 @@ h5 {
     color: #555F61;
   }
 
-  .resume_container p a:link {
+  .resume__link:link {
     color: #555F61;
     font-weight: bolder;
   }
 
+  .resume__link:visited {
+    color: #555F61;
+    font-weight: bolder;
+  }
 
+  .resume__link:hover {
+    color: #555F61;
+    font-weight: bolder;
+  }
+
+  .contact__link {
+    font-weight: bolder;
+  }
 
 }
 
@@ -344,7 +366,17 @@ h5 {
     max-width: 300px;
   }
 
-  .about__link a:link {
+  .about__link:link {
+    color: #555F61;
+    font-weight: bolder;
+  }
+
+  .about__link:visited {
+    color: #555F61;
+    font-weight: bolder;
+  }
+
+  .about__link:hover {
     color: #555F61;
     font-weight: bolder;
   }
@@ -353,13 +385,23 @@ h5 {
     color: #555F61;
   }
 
-  .resume_container p a:link {
+  .resume__link:link {
     color: #555F61;
     font-weight: bolder;
   }
 
+  .resume__link:visited {
+    color: #555F61;
+    font-weight: bolder;
+  }
+
+  .resume__link:hover {
+    color: #555F61;
+    font-weight: bolder;
+  }
 
   .contact__link {
+    font-weight: bolder;
     display: block;
     padding: 0;
     margin: 0;

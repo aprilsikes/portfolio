@@ -293,7 +293,7 @@ h5 {
     font-weight: bolder;
   }
 
-  .about__link {
+  .about__link a:link {
     color: #555F61;
     font-weight: bolder;
   }
@@ -319,7 +319,7 @@ h5 {
     color: #555F61;
   }
 
-  .resume_container p a{
+  .resume_container p a:link {
     color: #555F61;
     font-weight: bolder;
   }
@@ -344,7 +344,7 @@ h5 {
     max-width: 300px;
   }
 
-  .about__link {
+  .about__link a:link {
     color: #555F61;
     font-weight: bolder;
   }
@@ -353,7 +353,7 @@ h5 {
     color: #555F61;
   }
 
-  .resume_container p a {
+  .resume_container p a:link {
     color: #555F61;
     font-weight: bolder;
   }

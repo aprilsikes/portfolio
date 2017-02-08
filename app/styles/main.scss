@@ -214,6 +214,11 @@ h5 {
   margin-right: 10px;
 }
 
+.contact__link:visited {
+  text-decoration: none;
+  color: #94a4a4;
+}
+
 .contact__link:hover {
   text-decoration: none;
   color: #94a4a4;
@@ -283,6 +288,10 @@ h5 {
     text-align: center;
   }
 
+  #about {
+    color: #555F61;
+  }
+
   .about_container {
     max-width: 600px;
     text-align: center;
@@ -300,6 +309,14 @@ h5 {
     width: 85%;
   }
 
+  #resume .section__header {
+    color: #555F61;
+  }
+
+  .resume__link {
+    color: #555F61;
+  }
+
 
 
 }
@@ -311,8 +328,20 @@ h5 {
     display: inline;
   }
 
+  #about {
+    color: #555F61;
+  }
+
   .about_container {
     max-width: 300px;
+  }
+
+  #resume .section__header {
+    color: #555F61;
+  }
+
+  .resume__link {
+    color: #555F61;
   }
 
   .contact__link {
